@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resumen del Pedido</title>
+</head>
+<body>
+<h1>Resumen del Pedido</h1>
+<p>Cantidad: ${order.cantidad}</p>
+<p>Total: ${total}</p>
+<form action="/pedido/calificacion" method="post">
+    <label for="estrellas">Calificación:</label>
+    <input type="number" name="estrellas" id="estrellas" min="1" max="5" required />
+    <button type="submit">Enviar Calificación</button>
+</form>
+</body>
+</html>

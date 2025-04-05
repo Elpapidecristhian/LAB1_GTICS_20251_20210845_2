@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Formulario de Pedido</title>
+</head>
+<body>
+<h1 th:text="${mensaje}"></h1>
+<form action="#" th:action="@{/pedido}" th:object="${orderConfig}" method="post">
+  <label for="cantidad">Cantidad:</label>
+  <input type="number" th:field="*{cantidad}" id="cantidad" />
+  <button type="submit">Enviar Pedido</button>
+</form>
+</body>
+</html>
